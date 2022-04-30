@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 import sys
+import math
 
 def knn_reducer():
 
-    min_distance = [1000000,] * 15
+    min_distance = [math.inf,] * 15
     rowno_label = {}
 
     for line in sys.stdin:
